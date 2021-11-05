@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta charset="UTF-8">
+        <title>konstruktor</title>
+    </head>
+           <body>
+           
+           
+        
+
+
+
+
+             <p>imie</p>
+            imie:<input type="text" id='imie'>
+
+            <p>spodnie</p>
+            rozmiar:<input type="text" id='rozmiar'>
+            Marka:<input type="text" id='marka'>
+
+            <p>czapka</p>
+
+            marka:<input type="text" id='markacz'>
+            
+<button onclick="jd()" > strapon</button>
+        <script>
+            function display() {
+                console.log(this)
+            }
+
+            function jd() 
+            {
+                const obiekt = 
+                {
+                    imie: document.getElementById('imie').value,
+                    spodnie: 
+                    {
+                        rozmiar: document.getElementById('rozmiar').value,
+                        marka: document.getElementById('marka').value,
+                    },
+                    czapka: 
+                    {
+                        marka: document.getElementById('markacz').value, 
+                    },
+                    display: display,
+                }
+                obiekt.display()
+            }
+        </script>
+
+        </body>
+        </html>
